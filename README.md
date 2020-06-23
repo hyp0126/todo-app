@@ -1,2 +1,3 @@
-# todo-app
+# ToDo app
+
 React Native ToDo App
