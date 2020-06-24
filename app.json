@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F23657"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,6 +17,9 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "co.nomadcoders.kawai"
     }
   }
 }
