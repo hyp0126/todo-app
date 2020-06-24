@@ -12,8 +12,9 @@ import {
 } from "react-native";
 import { AppLoading } from "expo";
 import ToDo from "./ToDo";
-import { v1 as uuidv1 } from "uuid";
-
+import "react-native-get-random-values";
+import { v4 as uuidv4 } from "uuid";
+import uuid from "uuid-random";
 const { height, width } = Dimensions.get("window");
 
 export default class App extends React.Component {
@@ -82,7 +83,8 @@ export default class App extends React.Component {
     const { newToDo } = this.state;
     if (newToDo !== "") {
       this.setState((prevState) => {
-        const ID = Date.now(); //uuidv1();
+        const ID = uuid();
+        console.log(ID);
         const newToDoObject = {
           [ID]: {
             id: ID,
